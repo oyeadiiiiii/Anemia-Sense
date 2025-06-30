@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 from flask import Flask, request, render_template
 from flask_cors import CORS
+import os
 
 # Initialize Flask app
 app = Flask(__name__, static_url_path='/Flask/static')  # Adjust only if static folder is /Flask/static
@@ -42,4 +43,5 @@ def predict():
     return render_template("predict.html", prediction_text=text)
 
 if __name__ == "__main__":
-    app.run(debug=False, port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
