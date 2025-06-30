@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+    <div class="logo">Anemia</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+    </ul>
+    <a href="/" class="check-btn">check</a>
+  </nav>
+
+  <section class="result-section">
+    <h1>Result</h1>
+    <p>{{ prediction_text }}</p>
+  </section>
+
+  <footer>
+    <h3>Contact Us</h3>
+    <p>Aditya Raj</p>
+    <p><strong>Phone:</strong> +91 7819080257</p>
+    <p><strong>Email:</strong> 1812adityaraj@gmail.com</p>
+  </footer>
+</body>
+</html>

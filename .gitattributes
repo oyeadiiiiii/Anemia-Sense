@@ -1,2 +1,5 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Ignore the dataset folder and its contents
+Dataset/
+
+# Ignore Jupyter notebook file
+main.ipynb
