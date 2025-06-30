@@ -1,5 +1,1 @@
-# Ignore the dataset folder and its contents
-Dataset/anemia.csv
-
-# Ignore Jupyter notebook file
-main.ipynb
+* text=auto
