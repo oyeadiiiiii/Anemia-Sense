@@ -1,6 +1,6 @@
-flask
-gunicorn
-numpy
-pandas
-scikit-learn
-flask-cors
+flask==3.1.1
+gunicorn==23.0.0
+numpy==2.3.1
+pandas==2.3.0
+scikit-learn==1.7.0  # or whatever version you trained on
+flask-cors==6.0.1
